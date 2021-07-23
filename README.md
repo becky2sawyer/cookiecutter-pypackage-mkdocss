@@ -1,5 +1,19 @@
 # cookiecutter-pypackage-mkdocs
 Cookiecutter template for a Python package.
+
+## 무엇이 가능한가?
+1. 자동 파이썬 환경 구성
+1. 테스트 주도 개발 (TDD)
+1. pip 팩키지 개발 및 배포
+1. 자동화된 문서화 및 서버리스 배포 운영
+![배포예시](https://user-images.githubusercontent.com/10396850/126817668-b6aada4c-9221-4e11-8ece-728823463f33.png)
+
+## 본 템플릿을 사용한 프로젝트
+- [https://pypi.org/project/marsrover](https://pypi.org/project/marsrover/)
+- [https://pypi.org/project/dokdo](https://pypi.org/project/dokdo/)
+
+   
+## 사용기술
 - [Python Packaging User Guide](https://packaging.python.org/tutorials/packaging-projects) 반영
 - [MkDocs](https://www.mkdocs.org) + [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) 를 이용한 docstring - html 자동 변환 및 github page 배
 - [pytest](https://docs.pytest.org/) + [pytest-cov](https://pytest-cov.readthedocs.io/) 적용
@@ -8,15 +22,16 @@ Cookiecutter template for a Python package.
 ## USE
 #### 템플릿 생성
 ```
-$ pip install cookiecutter
+pip install cookiecutter
 ```
 ```
-$ cookiecutter https://github.com/becky2sawyer/cookiecutter-pypackage-mkdocss.git
-
+cookiecutter https://github.com/becky2sawyer/cookiecutter-pypackage-mkdocss.git
+```
+```
 github_account [github_account]: ****
 github_email [github_email]: ****@gmail.com
 github_repo [github_repo]: mars-rover       
-package_name [mars-rover]: mars_rover    
+package_name [mars-rover]: marsrover    
 short_description [short_description]: Let's go grow potatoes on Mars!
 version [0.1.0]: 
 pip_author : ****
@@ -63,6 +78,24 @@ Coverage XML written to file report/coverage/coverage.xml
 =============================== 1 passed in 0.11s ================================
 
 ```
+
+### BUILD
+```
+sh build.sh
+```
+
+### DEPLOY PIP
+```
+sh deploy_pip.sh
+```
+
+### PUBLISH GITHUB PAGES
+```
+sh deploy_gitpage
+```
+![배포예시](https://user-images.githubusercontent.com/10396850/126817668-b6aada4c-9221-4e11-8ece-728823463f33.png)
+
+
 
 ## Similar cookiecutter Templates
 - [https://github.com/audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage)
