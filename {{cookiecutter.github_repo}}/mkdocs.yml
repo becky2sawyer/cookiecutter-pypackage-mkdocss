@@ -1,5 +1,7 @@
 site_name: {{cookiecutter.package_name}}
 site_url: https://{{cookiecutter.github_account}}.github.io/{{cookiecutter.github_repo}}
+repo_url: https://github.com/{{cookiecutter.github_account}}/{{cookiecutter.github_repo}}
+repo_name: {{cookiecutter.github_account}}/{{cookiecutter.github_repo}}
 
 theme:
   logo: img/eye.png
