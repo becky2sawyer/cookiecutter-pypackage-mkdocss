@@ -35,3 +35,7 @@ def ping():
         print(f"{'p' * n}ong")
     else:
         print('pong')
+
+
+if __name__ == "__main__":
+    ping()

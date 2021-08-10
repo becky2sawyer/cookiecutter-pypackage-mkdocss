@@ -4,7 +4,7 @@ repo_url: https://github.com/{{cookiecutter.github_account}}/{{cookiecutter.gith
 repo_name: {{cookiecutter.github_account}}/{{cookiecutter.github_repo}}
 
 theme:
-  logo: img/eye.png
+  logo: img/logo.png
   favicon: img/favicon-16x16.png
   name: "material"
   language: kr
