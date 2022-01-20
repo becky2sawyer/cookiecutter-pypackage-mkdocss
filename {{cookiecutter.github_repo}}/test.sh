@@ -1,5 +1,5 @@
 
-PYTHONPATH="src/{{cookiecutter.package_name}}" pytest tests/ \
+PYTHONPATH="src" pytest tests/ \
 -c pytest.ini \
 --cov-report term:skip-covered \
 --cov-report xml:report/coverage/coverage.xml \
